@@ -141,23 +141,41 @@
           </div>
         </article>
 
-        <!-- PASSWORD CARD -->
-        <article class="feature-card" id="password-card">
-          <div class="feature-image feature-image-documents">
-            <span class="feature-number">03</span>
-            <span class="feature-image-label">MEMBER ACCESS</span>
-          </div>
+       <!-- PASSWORD CARD -->
+<article class="feature-card" id="password-card">
+  <div class="feature-image feature-image-documents">
+    <span class="feature-number">03</span>
+    <span class="feature-image-label">MEMBER ACCESS</span>
+  </div>
 
-          <div class="feature-body">
-            <p class="feature-kicker">SECURE DOCUMENTS</p>
-            <h3>Member Access</h3>
-            <p>Enter the password to view protected documents.</p>
+  <div class="feature-body">
+    <p class="feature-kicker">SECURE DOCUMENTS</p>
+    <h3>Member Access</h3>
+    <p>Enter the password to view minutes and announcements.</p>
 
-            <input type="password" id="password" placeholder="Enter password" class="password-input">
-            <button id="login-btn" class="button button-green">Sign In</button>
-            <p id="login-error" class="login-error"></p>
-          </div>
-        </article>
+    <!-- Compact action block -->
+    <div class="password-block" style="margin-top:12px; display:flex; flex-direction:column; gap:8px;">
+      <input 
+        type="password" 
+        id="password" 
+        placeholder="Enter password" 
+        class="password-input"
+        style="padding:8px;"
+      >
+
+      <button 
+        id="login-btn" 
+        class="button button-green"
+        style="width:100%;"
+      >
+        Sign In
+      </button>
+
+      <p id="login-error" class="login-error" style="margin:0;"></p>
+    </div>
+  </div>
+</article>
+
 
         <!-- MEETING MINUTES (HIDDEN UNTIL LOGIN) -->
         <article class="feature-card hidden protected-card" id="minutes-card">
@@ -250,26 +268,35 @@
   </div>
 
   <!-- RBC Branding Block -->
-  <div class="footer-rbc">
-    <div class="footer-rbc-inner">
-      <img
-        src="photos/rebecca-bean-consulting-web-design-logo.png"
-        alt="Rebecca Bean Consulting Web Design Logo"
-        class="rbc-logo"
-      />
+<div class="footer-rbc">
+  <div class="footer-rbc-inner">
 
-      <div class="rbc-text">
-  <p><strong>Thoughtfully built by</strong></p>
+    <div class="rbc-text">
+      <p><strong>Thoughtfully built by</strong></p>
 
-  <a href="https://beansdreams.org" target="_blank" rel="noopener noreferrer">
-    Rebecca Bean Consulting
-  </a>
+      <div style="display:flex; align-items:center; gap:12px;">
+        <a href="https://beansdreams.org" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; gap:10px; text-decoration:none;">
+          
+          <img 
+            src="photos/rebecca-bean-consulting-web-design-logo.png" 
+            alt="Rebecca Bean Consulting Logo" 
+            style="height:40px; width:auto;"
+          />
 
-  <br>
+          <span style="font-weight:600; font-size:1.05rem;">
+            Rebecca Bean Consulting
+          </span>
 
-  Business Systems & Website Services
+        </a>
+      </div>
+
+      <br>
+      Business Systems & Website Services
     </div>
+
   </div>
+</div>
+
 
   <!-- Footer Bottom -->
   <div class="footer-bottom">
