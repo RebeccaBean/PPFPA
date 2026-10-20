@@ -1,159 +1,410 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Panorama Park Fire Protection</title>
-  <meta name="description" content="Community information, announcements, meeting minutes, and fire safety resources for Panorama Park.">
+
+  <title>Panorama Park Fire Protection | Our Mountain Community</title>
+  <meta name="description" content="Community news, meeting information, fire safety resources, and announcements for Panorama Park.">
+
   <link rel="stylesheet" href="home.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
+  <!-- HEADER -->
   <header class="site-header">
-    <div class="brand">
-      <span class="brand-mark">PP</span>
-      <div>
-        <p class="brand-name">PANORAMA PARK</p>
-        <p class="brand-subtitle">FIRE PROTECTION</p>
-      </div>
-    </div>
+    <a class="brand" href="index.html" aria-label="Panorama Park Fire Protection home">
+      <span class="brand-emblem" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none">
+          <path d="M5 48L21 23L30 35L39 15L59 48H5Z"
+                stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M13 48L25 32L33 42L42 29L54 48"
+                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M8 54H56" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+      </span>
 
-    <nav class="main-nav">
-      <a href="index.html" class="active">Home</a>
-      <a href="documents.html">Community Documents</a>
+      <span class="brand-copy">
+        <span class="brand-name">PANORAMA PARK</span>
+        <span class="brand-subtitle">FIRE PROTECTION</span>
+      </span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open navigation"
+            aria-expanded="false" aria-controls="main-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="#community" class="nav-link">Our Community</a>
+      <a href="#fire-safety" class="nav-link">Fire Safety</a>
+      <a href="documents.html" class="nav-link nav-cta">Community Documents</a>
     </nav>
   </header>
 
+
   <main>
+
+    <!-- HERO: REPLACE THE BACKGROUND IMAGE URL WITH YOUR OWN PHOTO -->
     <section class="hero">
-      <!-- Replace this placeholder with a mountain landscape photo -->
-      <div class="hero-image-placeholder">
-        <div class="hero-overlay">
-          <p class="eyebrow">OUR MOUNTAIN COMMUNITY</p>
-          <h1>Protecting Our Community.<br>Preserving Our Home.</h1>
-          <p class="hero-description">
-            Working together to support fire protection, community
-            awareness, and the safety of Panorama Park.
-          </p>
+      <div class="hero-photo"></div>
+      <div class="hero-shade"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">
+          A MOUNTAIN COMMUNITY
+          <span class="eyebrow-line"></span>
+        </p>
+
+        <h1>
+          Protecting Our Community.<br>
+          <em>Preserving Our Home.</em>
+        </h1>
+
+        <p class="hero-description">
+          A shared commitment to our neighbors, our mountain surroundings,
+          and the safety of the place we call home.
+        </p>
+
+        <div class="hero-actions">
           <a href="documents.html" class="button button-gold">
-            Community Information
+            Explore Community Documents
+            <span aria-hidden="true">↗</span>
+          </a>
+
+          <a href="#community" class="text-link">
+            Discover Panorama Park <span aria-hidden="true">↓</span>
           </a>
         </div>
       </div>
-    </section>
 
-    <section class="intro section">
-      <p class="eyebrow">WELCOME TO PANORAMA PARK</p>
-      <h2>A Community That Looks Out for One Another</h2>
-      <p class="intro-text">
-        Panorama Park is a mountain community where neighbors share
-        a commitment to protecting our homes, caring for our surroundings,
-        and staying informed. This website provides a central place for
-        community updates, meeting records, newsletters, and important
-        fire-safety information.
-      </p>
-    </section>
-
-    <section class="feature-section section">
-      <div class="feature-card">
-        <span class="feature-number">01</span>
-        <h3>Community Updates</h3>
-        <p>
-          Find community announcements, upcoming meeting information,
-          newsletters, and other important notices.
-        </p>
-        <a href="documents.html">View community documents →</a>
+      <div class="hero-caption">
+        <span class="caption-rule"></span>
+        <span>ROOTED IN COMMUNITY. COMMITTED TO SAFETY.</span>
       </div>
 
-      <div class="feature-card">
-        <span class="feature-number">02</span>
-        <h3>Fire Safety Awareness</h3>
-        <p>
-          Stay informed about defensible space, seasonal fire risks,
-          emergency preparedness, and ways to help protect our mountain homes.
-        </p>
-        <a href="https://www.readyforwildfire.org/" target="_blank"
-           rel="noopener noreferrer">Explore wildfire preparedness →</a>
-      </div>
-
-      <div class="feature-card">
-        <span class="feature-number">03</span>
-        <h3>Meeting Minutes & Newsletters</h3>
-        <p>
-          Access community records and newsletters in one convenient location.
-          Check back for new documents and announcements.
-        </p>
-        <a href="documents.html">Visit the document library →</a>
+      <div class="hero-index" aria-hidden="true">
+        <span>PP</span>
+        <span class="index-divider"></span>
+        <span>01 — COMMUNITY</span>
       </div>
     </section>
 
-    <section class="community-banner">
-      <div>
-        <p class="eyebrow">STAY CONNECTED</p>
-        <h2>Informed Neighbors. A Stronger Community.</h2>
-        <p>
-          Visit the community documents page for available meeting minutes,
-          newsletters, and association information.
-        </p>
-      </div>
-      <a href="documents.html" class="button button-light">View Documents</a>
-    </section>
 
-    <section class="safety-section section">
-      <div>
-        <p class="eyebrow">BE PREPARED</p>
-        <h2>Wildfire Preparedness Starts at Home</h2>
+    <!-- ANNOUNCEMENT STRIP
+         Replace the sample message with an approved current notice. -->
+    <section class="announcement" aria-label="Community announcement">
+      <div class="announcement-label">
+        <span class="announcement-dot"></span>
+        COMMUNITY NOTICE
       </div>
+
       <p>
-        Mountain living brings unique responsibilities. Keep vegetation
-        maintained, make sure emergency access is clear, prepare an
-        evacuation plan, and follow official local fire and emergency alerts.
+        Stay informed about community meetings, announcements, and important updates.
       </p>
-      <a href="https://www.readyforwildfire.org/prepare-for-wildfire/"
-         target="_blank" rel="noopener noreferrer">
-        Visit California's wildfire preparedness resources →
+
+      <a href="documents.html">
+        View Updates <span aria-hidden="true">→</span>
       </a>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="footer-main">
-      <div>
-        <p class="footer-title">PANORAMA PARK</p>
-        <p>Fire Protection</p>
-        <p class="footer-note">
-          Community information and resources for our mountain neighborhood.
+
+    <!-- INTRODUCTION -->
+    <section class="community-intro section" id="community">
+      <div class="intro-side">
+        <p class="eyebrow eyebrow-dark">WELCOME TO PANORAMA PARK</p>
+
+        <h2>
+          A community<br>
+          <em>rooted in care.</em>
+        </h2>
+
+        <div class="gold-rule"></div>
+      </div>
+
+      <div class="intro-copy">
+        <p class="intro-lead">
+          There's something special about mountain living.
+        </p>
+
+        <p>
+          Panorama Park is a community built around our shared surroundings
+          and our responsibility to look out for one another. Keeping residents
+          informed and prepared is an important part of protecting the place
+          we call home.
+        </p>
+
+        <p>
+          This website brings community information, meeting records,
+          newsletters, and wildfire preparedness resources together in one
+          convenient place.
+        </p>
+
+        <a href="documents.html" class="underlined-link">
+          Explore community information <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+
+    <!-- THREE FEATURE CARDS -->
+    <section class="discover-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow eyebrow-dark">YOUR COMMUNITY RESOURCE</p>
+          <h2>Stay connected.<br><em>Stay prepared.</em></h2>
+        </div>
+
+        <p class="section-heading-copy">
+          Useful information for residents, all in one place.
         </p>
       </div>
 
-      <div>
-        <p class="footer-heading">QUICK LINKS</p>
+      <div class="feature-grid">
+
+        <!-- COMMUNITY NEWS -->
+        <article class="feature-card">
+          <div class="feature-image feature-image-news">
+            <span class="feature-number">01</span>
+            <span class="feature-image-label">COMMUNITY</span>
+          </div>
+
+          <div class="feature-body">
+            <p class="feature-kicker">KEEP IN THE KNOW</p>
+            <h3>Community News</h3>
+            <p>
+              Find announcements, association information, and updates
+              that help keep neighbors connected.
+            </p>
+
+            <a href="documents.html" class="card-link">
+              View Community Information <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+
+
+        <!-- FIRE PREPAREDNESS -->
+        <article class="feature-card">
+          <div class="feature-image feature-image-safety">
+            <span class="feature-number">02</span>
+            <span class="feature-image-label">PREPAREDNESS</span>
+          </div>
+
+          <div class="feature-body">
+            <p class="feature-kicker">PROTECT WHAT MATTERS</p>
+            <h3>Fire Preparedness</h3>
+            <p>
+              Explore wildfire readiness guidance, defensible space
+              information, and practical emergency preparation resources.
+            </p>
+
+            <a href="https://www.readyforwildfire.org/"
+               target="_blank" rel="noopener noreferrer" class="card-link">
+              Explore Fire Safety Resources <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+
+
+        <!-- DOCUMENT LIBRARY -->
+        <article class="feature-card">
+          <div class="feature-image feature-image-documents">
+            <span class="feature-number">03</span>
+            <span class="feature-image-label">RESIDENT RESOURCES</span>
+          </div>
+
+          <div class="feature-body">
+            <p class="feature-kicker">INFORMATION AT YOUR FINGERTIPS</p>
+            <h3>Minutes & Newsletters</h3>
+            <p>
+              Visit the document library for available meeting minutes,
+              newsletters, and other association materials.
+            </p>
+
+            <a href="documents.html" class="card-link">
+              Open Document Library <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- FIRE SAFETY FEATURE -->
+    <section class="safety-section" id="fire-safety">
+      <div class="safety-image">
+        <div class="safety-image-frame"></div>
+        <div class="safety-image-note">
+          <span class="note-symbol">✳</span>
+          <span>PREPAREDNESS<br>BEGINS AT HOME</span>
+        </div>
+      </div>
+
+      <div class="safety-copy">
+        <p class="eyebrow">LIVING RESPONSIBLY IN THE MOUNTAINS</p>
+
+        <h2>
+          Preparation today.<br>
+          <em>Protection tomorrow.</em>
+        </h2>
+
+        <p>
+          Wildfire awareness is an important part of mountain living.
+          Taking steps to maintain your property, plan evacuation routes,
+          and follow official emergency alerts can help you prepare for
+          changing conditions.
+        </p>
+
+        <ul class="safety-list">
+          <li><span>01</span> Maintain defensible space around your home.</li>
+          <li><span>02</span> Keep evacuation routes and access areas clear.</li>
+          <li><span>03</span> Prepare an emergency plan for your household.</li>
+        </ul>
+
+        <a href="https://www.readyforwildfire.org/prepare-for-wildfire/"
+           target="_blank" rel="noopener noreferrer"
+           class="button button-green">
+          Explore Wildfire Preparedness <span aria-hidden="true">↗</span>
+        </a>
+
+        <p class="resource-note">
+          For emergencies, follow official local instructions and call 911.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- COMMUNITY DOCUMENTS CTA -->
+    <section class="documents-banner">
+      <div class="banner-decoration" aria-hidden="true">PP</div>
+
+      <div class="banner-copy">
+        <p class="eyebrow">YOUR COMMUNITY. YOUR INFORMATION.</p>
+        <h2>Everything in one<br><em>convenient place.</em></h2>
+        <p>
+          Looking for meeting minutes, newsletters, or association documents?
+          Start with the community document library.
+        </p>
+      </div>
+
+      <a href="documents.html" class="button button-gold">
+        Visit the Document Library <span aria-hidden="true">→</span>
+      </a>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-main">
+
+      <div class="footer-brand">
+        <a class="brand footer-logo" href="index.html">
+          <span class="brand-emblem" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none">
+              <path d="M5 48L21 23L30 35L39 15L59 48H5Z"
+                    stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M13 48L25 32L33 42L42 29L54 48"
+                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M8 54H56" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </span>
+
+          <span class="brand-copy">
+            <span class="brand-name">PANORAMA PARK</span>
+            <span class="brand-subtitle">FIRE PROTECTION</span>
+          </span>
+        </a>
+
+        <p>
+          Supporting an informed, prepared, and connected mountain community.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h3>EXPLORE</h3>
         <a href="index.html">Home</a>
+        <a href="#community">Our Community</a>
+        <a href="#fire-safety">Fire Safety</a>
         <a href="documents.html">Community Documents</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>RESOURCES</h3>
         <a href="https://www.readyforwildfire.org/"
            target="_blank" rel="noopener noreferrer">Wildfire Preparedness</a>
+
+        <!-- Replace this address with the HOA's approved public email -->
+        <a href="mailto:REPLACE-WITH-HOA-EMAIL">Contact the Association</a>
       </div>
 
-      <div>
-        <p class="footer-heading">CONTACT</p>
-        <!-- Replace with the HOA's approved public email address -->
-        <a href="mailto:REPLACE-WITH-HOA-EMAIL">Email the Association</a>
-      </div>
     </div>
 
+
     <div class="footer-bottom">
-      <p>© <span id="year"></span> Panorama Park Fire Protection</p>
-      <p class="site-credit">
-        Website support by
-        <a href="https://beansdreams.org" target="_blank"
-           rel="noopener noreferrer">Rebecca Bean Consulting</a>
+      <p>
+        © <span id="current-year"></span> Panorama Park Fire Protection.
+        All rights reserved.
       </p>
+
+      <div class="site-creator">
+        <span>Website thoughtfully created by</span>
+        <a href="https://beansdreams.org"
+           target="_blank" rel="noopener noreferrer">
+          Rebecca Bean Consulting
+        </a>
+        <span class="creator-divider">·</span>
+        <a href="https://beansdreams.org" target="_blank"
+           rel="noopener noreferrer" class="services-link">
+          Business systems & website services
+        </a>
+      </div>
     </div>
   </footer>
 
+
+  <!-- SMALL MOBILE NAVIGATION SCRIPT -->
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    const menuToggle = document.querySelector(".menu-toggle");
+    const mainNav = document.querySelector(".main-nav");
+
+    if (menuToggle && mainNav) {
+      menuToggle.addEventListener("click", () => {
+        const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+
+        menuToggle.setAttribute("aria-expanded", String(!isOpen));
+        menuToggle.setAttribute(
+          "aria-label",
+          isOpen ? "Open navigation" : "Close navigation"
+        );
+        mainNav.classList.toggle("nav-open", !isOpen);
+      });
+
+      mainNav.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+          mainNav.classList.remove("nav-open");
+          menuToggle.setAttribute("aria-expanded", "false");
+          menuToggle.setAttribute("aria-label", "Open navigation");
+        });
+      });
+    }
+
+    document.getElementById("current-year").textContent =
+      new Date().getFullYear();
   </script>
 
 </body>
 </html>
+```
