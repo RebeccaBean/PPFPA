@@ -7,427 +7,333 @@
   <title>Community Documents | Panorama Park Fire Protection</title>
   <meta name="description" content="Access Panorama Park Fire Protection meeting minutes, newsletters, community notices, and important documents.">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="home.css">
 
-  <style>
-    .documents-hero {
-      min-height: 330px;
-      padding: 90px 24px 75px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #fff;
-      background:
-        linear-gradient(rgba(17, 40, 31, 0.72), rgba(17, 40, 31, 0.83)),
-        url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=2000&q=85")
-        center 48% / cover no-repeat;
-    }
-
-    .documents-hero .eyebrow {
-      color: #e6c783;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size: 0.78rem;
-      font-weight: 700;
-      margin-bottom: 16px;
-    }
-
-    .documents-hero h1 {
-      font-family: "Playfair Display", serif;
-      font-size: clamp(2.5rem, 5vw, 4rem);
-      line-height: 1.15;
-      margin: 0 0 18px;
-    }
-
-    .documents-hero p {
-      max-width: 650px;
-      margin: 0 auto;
-      color: #f4f1e9;
-      font-size: 1.05rem;
-      line-height: 1.8;
-    }
-
-    .documents-main {
-      max-width: 1120px;
-      margin: 0 auto;
-      padding: 75px 24px 90px;
-    }
-
-    .documents-intro {
-      max-width: 720px;
-      margin: 0 auto 45px;
-      text-align: center;
-    }
-
-    .documents-intro h2,
-    .document-group h2 {
-      font-family: "Playfair Display", serif;
-      color: #244b3b;
-    }
-
-    .documents-intro h2 {
-      font-size: clamp(2rem, 4vw, 2.7rem);
-      margin: 0 0 16px;
-    }
-
-    .documents-intro p {
-      color: #666b65;
-      line-height: 1.8;
-    }
-
-    .document-groups {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 24px;
-    }
-
-    .document-group {
-      background: #fff;
-      border: 1px solid #e8e5dc;
-      border-radius: 14px;
-      padding: 30px;
-      box-shadow: 0 10px 35px rgba(30, 54, 42, 0.06);
-    }
-
-    .document-icon {
-      width: 52px;
-      height: 52px;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #f5eddb;
-      color: #315b45;
-      font-size: 1.45rem;
-      margin-bottom: 20px;
-    }
-
-    .document-group h2 {
-      font-size: 1.6rem;
-      margin: 0 0 10px;
-    }
-
-    .document-group > p {
-      color: #696d67;
-      font-size: 0.96rem;
-      line-height: 1.7;
-      margin: 0 0 22px;
-    }
-
-    .document-link {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      padding: 15px 0;
-      border-top: 1px solid #eceae4;
-      color: #315b45;
-      text-decoration: none;
-      font-weight: 600;
-      line-height: 1.5;
-    }
-
-    .document-link:hover {
-      color: #a47b32;
-    }
-
-    .document-link span:last-child {
-      color: #a47b32;
-      font-size: 1.15rem;
-    }
-
-    .documents-note {
-      margin-top: 35px;
-      padding: 24px 28px;
-      background: #f7f5ef;
-      border-left: 4px solid #c7a45c;
-      border-radius: 5px;
-      color: #5f635d;
-      line-height: 1.8;
-    }
-
-    .documents-note strong {
-      color: #244b3b;
-    }
-
-    .document-contact {
-      margin-top: 55px;
-      padding: 38px 28px;
-      text-align: center;
-      border-radius: 14px;
-      background: #244b3b;
-      color: #fff;
-    }
-
-    .document-contact h2 {
-      font-family: "Playfair Display", serif;
-      font-size: 2rem;
-      margin: 0 0 12px;
-    }
-
-    .document-contact p {
-      max-width: 620px;
-      margin: 0 auto 22px;
-      color: #e8eee8;
-      line-height: 1.8;
-    }
-
-    .document-contact a {
-      display: inline-block;
-      padding: 13px 23px;
-      border-radius: 5px;
-      background: #d6b56e;
-      color: #203e30;
-      font-weight: 700;
-      text-decoration: none;
-    }
-
-    .document-contact a:hover {
-      background: #e8cb8a;
-    }
-
-    @media (max-width: 700px) {
-      .documents-hero {
-        min-height: 290px;
-        padding: 70px 20px;
-      }
-
-      .documents-main {
-        padding: 55px 18px 65px;
-      }
-
-      .document-groups {
-        grid-template-columns: 1fr;
-      }
-
-      .document-group {
-        padding: 24px;
-      }
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- HEADER -->
+  <!-- HEADER (matches index.html exactly) -->
   <header class="site-header">
-    <div class="header-inner">
-      <a class="logo" href="index.html" aria-label="Panorama Park Fire Protection home">
-        <span class="logo-icon" aria-hidden="true">
-          <svg viewBox="0 0 64 64" width="48" height="48" fill="none">
-            <path d="M5 46 23 17 34 34 42 23 59 46H5Z"
-                  stroke="currentColor" stroke-width="3"
-                  stroke-linejoin="round"/>
-            <path d="M14 46 24 31 33 46"
-                  stroke="currentColor" stroke-width="3"
-                  stroke-linejoin="round"/>
-            <path d="M32 51H59" stroke="#c7a45c" stroke-width="3"/>
-          </svg>
-        </span>
-        <span class="logo-text">
-          <strong>Panorama Park</strong>
-          <span>Fire Protection</span>
-        </span>
-      </a>
+    <a class="brand" href="index.html" aria-label="Panorama Park Fire Protection home">
+      <span class="brand-emblem" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none">
+          <path d="M5 48L21 23L30 35L39 15L59 48H5Z"
+                stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M13 48L25 32L33 42L42 29L54 48"
+                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M8 54H56" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+      </span>
 
-      <button class="menu-toggle"
-              id="menuToggle"
-              aria-label="Open navigation menu"
-              aria-expanded="false"
-              aria-controls="navLinks">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <span class="brand-copy">
+        <span class="brand-name">PANORAMA PARK</span>
+        <span class="brand-subtitle">FIRE PROTECTION</span>
+      </span>
+    </a>
 
-      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="index.html#community">Our Community</a>
-        <a href="index.html#fire-safety">Fire Safety</a>
-        <a href="index.html#resources">Resources</a>
-        <a href="index.html#contact">Contact</a>
-        <a href="documents.html" aria-current="page">Community Documents</a>
-      </nav>
-    </div>
+    <button class="menu-toggle" aria-label="Open navigation"
+            aria-expanded="false" aria-controls="main-nav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="index.html#community" class="nav-link">Our Community</a>
+      <a href="index.html#fire-safety" class="nav-link">Fire Safety</a>
+      <a href="documents.html" class="nav-link nav-cta active">Community Documents</a>
+    </nav>
   </header>
 
-  <!-- PAGE HERO -->
-  <section class="documents-hero">
-    <div>
-      <div class="eyebrow">Panorama Park Community</div>
-      <h1>Community Documents</h1>
-      <p>
-        A central place for association updates, meeting records,
-        newsletters, and helpful information for our community.
+  <!-- HERO (Option B: smaller hero, styled to match index typography) -->
+  <section class="hero hero-small">
+    <div class="hero-photo"></div>
+    <div class="hero-shade"></div>
+
+    <div class="hero-content">
+      <p class="eyebrow">
+        COMMUNITY DOCUMENTS
+        <span class="eyebrow-line"></span>
       </p>
+
+      <h1>
+        Your Community Records<br>
+        <em>All in One Place.</em>
+      </h1>
+
+      <p class="hero-description">
+        Access newsletters, notices, meeting minutes, and association documents.
+      </p>
+    </div>
+
+    <div class="hero-index" aria-hidden="true">
+      <span>PP</span>
+      <span class="index-divider"></span>
+      <span>02 — DOCUMENTS</span>
     </div>
   </section>
 
-  <!-- DOCUMENT LIBRARY -->
-  <main class="documents-main">
-    <section class="documents-intro">
-      <h2>Community Information, All in One Place</h2>
-      <p>
-        Use the sections below to find association records and community
-        announcements. Documents will be added as they become available.
-      </p>
+  <main class="section">
+
+    <!-- INTRO -->
+    <section class="community-intro section">
+      <div class="intro-side">
+        <p class="eyebrow eyebrow-dark">COMMUNITY INFORMATION</p>
+        <h2>Documents for Residents<br><em>Updated as Available.</em></h2>
+        <div class="gold-rule"></div>
+      </div>
+
+      <div class="intro-copy">
+        <p class="intro-lead">
+          Below you’ll find public notices, newsletters, and helpful links.
+        </p>
+        <p>
+          Meeting minutes and community announcements require a password
+          to access. Contact the association secretary if you need access.
+        </p>
+      </div>
     </section>
 
-    <div class="document-groups">
+    <!-- PUBLIC DOCUMENTS -->
+    <section class="discover-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow eyebrow-dark">PUBLIC DOCUMENTS</p>
+          <h2>Available to All Residents</h2>
+        </div>
+      </div>
 
-      <!-- MEETING MINUTES -->
-      <section class="document-group">
-        <div class="document-icon" aria-hidden="true">▤</div>
-        <h2>Meeting Minutes</h2>
-        <p>
-          Review records of association meetings, discussions, and
-          community decisions.
-        </p>
+      <div class="feature-grid">
 
-        <!-- Replace the example URL with your actual Google Drive link. -->
-        <a class="document-link" href="REPLACE-WITH-MINUTES-LINK">
-          <span>View Meeting Minutes</span>
-          <span aria-hidden="true">↗</span>
-        </a>
-      </section>
+        <!-- NEWSLETTERS (PUBLIC) -->
+        <article class="feature-card">
+          <div class="feature-image feature-image-documents">
+            <span class="feature-number">01</span>
+            <span class="feature-image-label">NEWSLETTERS</span>
+          </div>
 
-      <!-- NEWSLETTERS -->
-      <section class="document-group">
-        <div class="document-icon" aria-hidden="true">▧</div>
-        <h2>Newsletters</h2>
-        <p>
-          Catch up on neighborhood news, seasonal reminders, and
-          association updates.
-        </p>
+          <div class="feature-body">
+            <p class="feature-kicker">COMMUNITY UPDATES</p>
+            <h3>Newsletters</h3>
+            <p>Seasonal reminders, neighborhood updates, and association news.</p>
 
-        <!-- Replace the example URL with your actual Google Drive link. -->
-        <a class="document-link" href="REPLACE-WITH-NEWSLETTERS-LINK">
-          <span>View Newsletters</span>
-          <span aria-hidden="true">↗</span>
-        </a>
-      </section>
+            <a href="REPLACE-WITH-NEWSLETTERS-FOLDER" class="card-link">
+              View Newsletters <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
 
-      <!-- COMMUNITY NOTICES -->
-      <section class="document-group">
-        <div class="document-icon" aria-hidden="true">◇</div>
-        <h2>Community Notices</h2>
-        <p>
-          Find important announcements, maintenance notices, and
-          other information shared with residents.
-        </p>
+        <!-- COMMUNITY NOTICES (PUBLIC) -->
+        <article class="feature-card">
+          <div class="feature-image feature-image-news">
+            <span class="feature-number">02</span>
+            <span class="feature-image-label">NOTICES</span>
+          </div>
 
-        <!-- Replace the example URL with your actual Google Drive link. -->
-        <a class="document-link" href="REPLACE-WITH-NOTICES-LINK">
-          <span>View Community Notices</span>
-          <span aria-hidden="true">↗</span>
-        </a>
-      </section>
+          <div class="feature-body">
+            <p class="feature-kicker">IMPORTANT INFORMATION</p>
+            <h3>Community Notices</h3>
+            <p>Announcements, maintenance notices, and updates for residents.</p>
 
-      <!-- HELPFUL LINKS -->
-      <section class="document-group">
-        <div class="document-icon" aria-hidden="true">⌂</div>
-        <h2>Helpful Links</h2>
-        <p>
-          Visit trusted resources for wildfire preparation and
-          protecting your home.
-        </p>
+            <a href="REPLACE-WITH-NOTICES-FOLDER" class="card-link">
+              View Notices <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
 
-        <a class="document-link"
-           href="https://readyforwildfire.org/"
-           target="_blank"
-           rel="noopener noreferrer">
-          <span>CAL FIRE: Ready for Wildfire</span>
-          <span aria-hidden="true">↗</span>
-        </a>
+        <!-- HELPFUL LINKS (PUBLIC) -->
+        <article class="feature-card">
+          <div class="feature-image feature-image-safety">
+            <span class="feature-number">03</span>
+            <span class="feature-image-label">RESOURCES</span>
+          </div>
 
-        <a class="document-link"
-           href="https://www.fire.ca.gov/"
-           target="_blank"
-           rel="noopener noreferrer">
-          <span>CAL FIRE Official Website</span>
-          <span aria-hidden="true">↗</span>
-        </a>
-      </section>
+          <div class="feature-body">
+            <p class="feature-kicker">WILDFIRE PREPAREDNESS</p>
+            <h3>Helpful Links</h3>
+            <p>Trusted resources for wildfire readiness and home protection.</p>
 
-    </div>
+            <a href="https://readyforwildfire.org/" target="_blank" rel="noopener noreferrer" class="card-link">
+              CAL FIRE: Ready for Wildfire <span aria-hidden="true">↗</span>
+            </a>
 
-    <aside class="documents-note">
-      <strong>Accessing association documents</strong><br>
-      Some documents may be available only to association members.
-      If a document requests permission, sign in with an authorized
-      Google account or contact the association secretary.
-    </aside>
+            <a href="https://www.fire.ca.gov/" target="_blank" rel="noopener noreferrer" class="card-link">
+              CAL FIRE Official Website <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
 
-    <section class="document-contact">
-      <h2>Looking for Something Specific?</h2>
-      <p>
-        If you cannot find a document or have a question about association
-        records, please contact the association secretary.
-      </p>
-      <a href="mailto:REPLACE-WITH-HOA-EMAIL">
-        Contact the Association
-      </a>
+      </div>
     </section>
+
+    <!-- LOGIN BOX -->
+    <section id="login-box" class="login-box">
+      <h2>Member Access</h2>
+      <p>Some documents require a password. Contact the association secretary if you need access.</p>
+
+      <input type="password" id="password" placeholder="Enter password">
+      <button id="login-btn" class="button button-green">Sign In</button>
+      <p id="login-error" class="login-error"></p>
+    </section>
+
+    <!-- PROTECTED DOCUMENTS -->
+    <section class="discover-section docs-protected hidden" id="protected-docs">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow eyebrow-dark">MEMBER DOCUMENTS</p>
+          <h2>Protected Information</h2>
+        </div>
+      </div>
+
+      <div class="feature-grid">
+
+        <!-- MEETING MINUTES (PROTECTED) -->
+        <article class="feature-card">
+          <div class="feature-image feature-image-documents">
+            <span class="feature-number">04</span>
+            <span class="feature-image-label">MINUTES</span>
+          </div>
+
+          <div class="feature-body">
+            <p class="feature-kicker">ASSOCIATION RECORDS</p>
+            <h3>Meeting Minutes</h3>
+            <p>Records of association meetings and community decisions.</p>
+
+            <a href="REPLACE-WITH-MINUTES-FOLDER" class="card-link">
+              View Meeting Minutes <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- COMMUNITY ANNOUNCEMENTS (PROTECTED) -->
+        <article class="feature-card">
+          <div class="feature-image feature-image-news">
+            <span class="feature-number">05</span>
+            <span class="feature-image-label">ANNOUNCEMENTS</span>
+          </div>
+
+          <div class="feature-body">
+            <p class="feature-kicker">MEMBER UPDATES</p>
+            <h3>Community Announcements</h3>
+            <p>Information shared privately with association members.</p>
+
+            <a href="REPLACE-WITH-ANNOUNCEMENTS-FOLDER" class="card-link">
+              View Announcements <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
   </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer" id="contact">
-    <div class="footer-inner">
-      <div>
-        <a class="footer-brand" href="index.html">Panorama Park Fire Protection</a>
-        <p>Working together for a safer, stronger community.</p>
+  <!-- FOOTER (matches index.html exactly) -->
+  <footer class="site-footer">
+    <div class="footer-main">
+
+      <div class="footer-brand">
+        <a class="brand footer-logo" href="index.html">
+          <span class="brand-emblem" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none">
+              <path d="M5 48L21 23L30 35L39 15L59 48H5Z"
+                    stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M13 48L25 32L33 42L42 29L54 48"
+                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M8 54H56" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </span>
+
+          <span class="brand-copy">
+            <span class="brand-name">PANORAMA PARK</span>
+            <span class="brand-subtitle">FIRE PROTECTION</span>
+          </span>
+        </a>
+
+        <p>Supporting an informed, prepared, and connected mountain community.</p>
       </div>
 
-      <div class="footer-links">
+      <div class="footer-column">
+        <h3>EXPLORE</h3>
         <a href="index.html">Home</a>
-        <a href="index.html#resources">Resources</a>
+        <a href="index.html#community">Our Community</a>
+        <a href="index.html#fire-safety">Fire Safety</a>
         <a href="documents.html">Community Documents</a>
       </div>
+
+      <div class="footer-column">
+        <h3>RESOURCES</h3>
+        <a href="https://www.readyforwildfire.org/" target="_blank" rel="noopener noreferrer">Wildfire Preparedness</a>
+        <a href="mailto:REPLACE-WITH-HOA-EMAIL">Contact the Association</a>
+      </div>
+
     </div>
 
     <div class="footer-bottom">
-      <span>© <span id="currentYear"></span> Panorama Park Fire Protection</span>
-      <span class="site-credit">
-        Website by
-        <a href="https://beansdreams.org"
-           target="_blank"
-           rel="noopener noreferrer">Rebecca Bean Consulting</a>
-      </span>
-    </div>
+      <p>
+        © <span id="current-year"></span> Panorama Park Fire Protection.
+        All rights reserved.
+      </p>
+
+   <div class="site-creator enhanced-creator">
+  <img src="YOUR-LOGO.png" alt="Rebecca Bean Consulting Logo" class="rbc-logo-large">
+
+  <div>
+    <span>Website created by</span>
+    <a href="https://beansdreams.org" target="_blank" rel="noopener noreferrer">
+      Rebecca Bean Consulting
+    </a>
+    <span class="creator-divider">·</span>
+    <a href="https://beansdreams.org" target="_blank" rel="noopener noreferrer" class="services-link">
+      Business systems & website services
+    </a>
+  </div>
+</div>
+
   </footer>
 
+  <!-- JS: Mobile nav + password gate -->
   <script>
-    const menuToggle = document.getElementById("menuToggle");
-    const navLinks = document.getElementById("navLinks");
+    // Mobile nav
+    const menuToggle = document.querySelector(".menu-toggle");
+    const mainNav = document.querySelector(".main-nav");
 
-    if (menuToggle && navLinks) {
+    if (menuToggle && mainNav) {
       menuToggle.addEventListener("click", () => {
-        const isOpen = navLinks.classList.toggle("active");
-        menuToggle.classList.toggle("active", isOpen);
-        menuToggle.setAttribute("aria-expanded", String(isOpen));
-        menuToggle.setAttribute(
-          "aria-label",
-          isOpen ? "Close navigation menu" : "Open navigation menu"
-        );
+        const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", String(!isOpen));
+        menuToggle.setAttribute("aria-label", isOpen ? "Open navigation" : "Close navigation");
+        mainNav.classList.toggle("nav-open", !isOpen);
       });
 
-      navLinks.querySelectorAll("a").forEach(link => {
+      mainNav.querySelectorAll("a").forEach(link => {
         link.addEventListener("click", () => {
-          navLinks.classList.remove("active");
-          menuToggle.classList.remove("active");
+          mainNav.classList.remove("nav-open");
           menuToggle.setAttribute("aria-expanded", "false");
-          menuToggle.setAttribute("aria-label", "Open navigation menu");
+          menuToggle.setAttribute("aria-label", "Open navigation");
         });
       });
     }
 
-    document.getElementById("currentYear").textContent =
+    // Footer year
+    document.getElementById("current-year").textContent =
       new Date().getFullYear();
+
+    // Password gate
+    document.getElementById("login-btn").addEventListener("click", function () {
+      const pw = document.getElementById("password").value;
+      const error = document.getElementById("login-error");
+
+      if (pw === "PanoramaPark") {
+        document.getElementById("protected-docs").classList.remove("hidden");
+        document.getElementById("login-box").style.display = "none";
+      } else {
+        error.textContent = "Incorrect password.";
+      }
+    });
   </script>
 
 </body>
