@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Community Documents | Panorama Park Fire Protection</title>
-  <meta name="description" content="Access Panorama Park Fire Protection meeting minutes, newsletters, community notices, and important documents.">
+  <meta name="description" content="Access Panorama Park Fire Protection meeting minutes, newsletters, and important documents.">
 
   <link rel="stylesheet" href="home.css">
 
@@ -16,7 +16,7 @@
 
 <body>
 
-  <!-- HEADER (matches index.html exactly) -->
+  <!-- HEADER -->
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="Panorama Park Fire Protection home">
       <span class="brand-emblem" aria-hidden="true">
@@ -48,7 +48,7 @@
     </nav>
   </header>
 
-  <!-- HERO (Option B: smaller hero, styled to match index typography) -->
+  <!-- HERO (Option B) -->
   <section class="hero hero-small">
     <div class="hero-photo"></div>
     <div class="hero-shade"></div>
@@ -65,7 +65,7 @@
       </h1>
 
       <p class="hero-description">
-        Access newsletters, notices, meeting minutes, and association documents.
+        Access newsletters, meeting minutes, and association documents.
       </p>
     </div>
 
@@ -88,27 +88,20 @@
 
       <div class="intro-copy">
         <p class="intro-lead">
-          Below you’ll find public notices, newsletters, and helpful links.
+          Below you’ll find newsletters and helpful links.
         </p>
         <p>
-          Meeting minutes and community announcements require a password
-          to access. Contact the association secretary if you need access.
+          Meeting minutes and community announcements require a password.
+          Contact the association secretary if you need access.
         </p>
       </div>
     </section>
 
-    <!-- PUBLIC DOCUMENTS -->
+    <!-- DOCUMENT GRID -->
     <section class="discover-section">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow eyebrow-dark">PUBLIC DOCUMENTS</p>
-          <h2>Available to All Residents</h2>
-        </div>
-      </div>
-
       <div class="feature-grid">
 
-        <!-- NEWSLETTERS (PUBLIC) -->
+        <!-- NEWSLETTERS -->
         <article class="feature-card">
           <div class="feature-image feature-image-documents">
             <span class="feature-number">01</span>
@@ -126,28 +119,10 @@
           </div>
         </article>
 
-        <!-- COMMUNITY NOTICES (PUBLIC) -->
-        <article class="feature-card">
-          <div class="feature-image feature-image-news">
-            <span class="feature-number">02</span>
-            <span class="feature-image-label">NOTICES</span>
-          </div>
-
-          <div class="feature-body">
-            <p class="feature-kicker">IMPORTANT INFORMATION</p>
-            <h3>Community Notices</h3>
-            <p>Announcements, maintenance notices, and updates for residents.</p>
-
-            <a href="REPLACE-WITH-NOTICES-FOLDER" class="card-link">
-              View Notices <span aria-hidden="true">↗</span>
-            </a>
-          </div>
-        </article>
-
-        <!-- HELPFUL LINKS (PUBLIC) -->
+        <!-- HELPFUL LINKS -->
         <article class="feature-card">
           <div class="feature-image feature-image-safety">
-            <span class="feature-number">03</span>
+            <span class="feature-number">02</span>
             <span class="feature-image-label">RESOURCES</span>
           </div>
 
@@ -166,32 +141,26 @@
           </div>
         </article>
 
-      </div>
-    </section>
+        <!-- PASSWORD CARD -->
+        <article class="feature-card" id="password-card">
+          <div class="feature-image feature-image-documents">
+            <span class="feature-number">03</span>
+            <span class="feature-image-label">MEMBER ACCESS</span>
+          </div>
 
-    <!-- LOGIN BOX -->
-    <section id="login-box" class="login-box">
-      <h2>Member Access</h2>
-      <p>Some documents require a password. Contact the association secretary if you need access.</p>
+          <div class="feature-body">
+            <p class="feature-kicker">SECURE DOCUMENTS</p>
+            <h3>Member Access</h3>
+            <p>Enter the password to view protected documents.</p>
 
-      <input type="password" id="password" placeholder="Enter password">
-      <button id="login-btn" class="button button-green">Sign In</button>
-      <p id="login-error" class="login-error"></p>
-    </section>
+            <input type="password" id="password" placeholder="Enter password" class="password-input">
+            <button id="login-btn" class="button button-green">Sign In</button>
+            <p id="login-error" class="login-error"></p>
+          </div>
+        </article>
 
-    <!-- PROTECTED DOCUMENTS -->
-    <section class="discover-section docs-protected hidden" id="protected-docs">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow eyebrow-dark">MEMBER DOCUMENTS</p>
-          <h2>Protected Information</h2>
-        </div>
-      </div>
-
-      <div class="feature-grid">
-
-        <!-- MEETING MINUTES (PROTECTED) -->
-        <article class="feature-card">
+        <!-- MEETING MINUTES (HIDDEN UNTIL LOGIN) -->
+        <article class="feature-card hidden protected-card" id="minutes-card">
           <div class="feature-image feature-image-documents">
             <span class="feature-number">04</span>
             <span class="feature-image-label">MINUTES</span>
@@ -208,8 +177,8 @@
           </div>
         </article>
 
-        <!-- COMMUNITY ANNOUNCEMENTS (PROTECTED) -->
-        <article class="feature-card">
+        <!-- COMMUNITY ANNOUNCEMENTS (HIDDEN UNTIL LOGIN) -->
+        <article class="feature-card hidden protected-card" id="announcements-card">
           <div class="feature-image feature-image-news">
             <span class="feature-number">05</span>
             <span class="feature-image-label">ANNOUNCEMENTS</span>
@@ -231,7 +200,7 @@
 
   </main>
 
-  <!-- FOOTER (matches index.html exactly) -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-main">
 
@@ -266,10 +235,25 @@
 
       <div class="footer-column">
         <h3>RESOURCES</h3>
-        <a href="https://www.readyforwildfire.org/" target="_blank" rel="noopener noreferrer">Wildfire Preparedness</a>
+        <a href="https://readyforwildfire.org/" target="_blank" rel="noopener noreferrer">Wildfire Preparedness</a>
         <a href="mailto:REPLACE-WITH-HOA-EMAIL">Contact the Association</a>
       </div>
 
+    </div>
+
+    <!-- RIGHT‑ALIGNED RBC BRANDING BLOCK -->
+    <div class="footer-rbc right-align">
+      <img src="rebecca-bean-consulting-web-design-logo-panorama-park.jpg"
+           alt="Rebecca Bean Consulting Web Design Logo"
+           class="rbc-logo">
+
+      <div class="rbc-text">
+        <strong>Rebecca Bean Consulting</strong><br>
+        Business Systems & Website Services<br>
+        <a href="https://beansdreams.org" target="_blank" rel="noopener noreferrer">
+          beansdreams.org
+        </a>
+      </div>
     </div>
 
     <div class="footer-bottom">
@@ -277,25 +261,10 @@
         © <span id="current-year"></span> Panorama Park Fire Protection.
         All rights reserved.
       </p>
-
-   <div class="site-creator enhanced-creator">
-  <img src="YOUR-LOGO.png" alt="Rebecca Bean Consulting Logo" class="rbc-logo-large">
-
-  <div>
-    <span>Website created by</span>
-    <a href="https://beansdreams.org" target="_blank" rel="noopener noreferrer">
-      Rebecca Bean Consulting
-    </a>
-    <span class="creator-divider">·</span>
-    <a href="https://beansdreams.org" target="_blank" rel="noopener noreferrer" class="services-link">
-      Business systems & website services
-    </a>
-  </div>
-</div>
-
+    </div>
   </footer>
 
-  <!-- JS: Mobile nav + password gate -->
+  <!-- JS -->
   <script>
     // Mobile nav
     const menuToggle = document.querySelector(".menu-toggle");
@@ -328,8 +297,8 @@
       const error = document.getElementById("login-error");
 
       if (pw === "PanoramaPark") {
-        document.getElementById("protected-docs").classList.remove("hidden");
-        document.getElementById("login-box").style.display = "none";
+        document.getElementById("password-card").classList.add("hidden");
+        document.querySelectorAll(".protected-card").forEach(card => card.classList.remove("hidden"));
       } else {
         error.textContent = "Incorrect password.";
       }
